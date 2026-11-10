@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vínculos | Meu Sistema</title> <!-- >>> ALTERAR: título da aba -->
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1> <!-- >>> ALTERAR: nome do sistema -->
+        <!-- >>> ALTERAR: links do menu (nome do arquivo .html e texto) -->
+        <nav>
+            <a href="entidade1.html">Entidade 1</a>
+            <a href="entidade2.html">Entidade 2</a>
+            <a href="entidade3.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Vínculos</h2> <!-- >>> ALTERAR: título da tela -->
+        <!-- >>> ALTERAR: textos dos <label>/<option>; name e id precisam ser iguais às colunas da tabela vinculo -->
+        <form action="">
+            <label for="data_vinculo">Data</label>
+            <input id="data_vinculo" name="data_vinculo" type="date" required>
+
+            <label for="id_entidade1">Entidade 1</label>
+            <select name="id_entidade1" id="id_entidade1" required>
+                <option value="">Selecione a entidade 1</option>
+            </select>
+
+            <label for="id_entidade2">Entidade 2</label>
+            <select name="id_entidade2" id="id_entidade2" required>
+                <option value="">Selecione a entidade 2</option>
+            </select>
+
+            <label for="id_entidade3">Entidade 3</label>
+            <select name="id_entidade3" id="id_entidade3" required>
+                <option value="">Selecione a entidade 3</option>
+            </select>
+
+            <button type="submit" disabled>Vincular</button>
+        </form>
+
+        <table>
+            <caption>Lista de vínculos</caption>
+            <thead>
+                <tr>
+                    <!-- >>> ALTERAR: cabeçalhos das colunas -->
+                    <th>Data</th>
+                    <th>Entidade 1</th>
+                    <th>Entidade 2</th>
+                    <th>Entidade 3</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-vinculo"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/vinculo.js"></script>
+</body>
+</html>

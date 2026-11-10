@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entidade 3 | Meu Sistema</title> <!-- >>> ALTERAR: título da aba -->
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1> <!-- >>> ALTERAR: nome do sistema -->
+        <!-- >>> ALTERAR: links do menu (nome do arquivo .html e texto) -->
+        <nav>
+            <a href="entidade1.html">Entidade 1</a>
+            <a href="entidade2.html">Entidade 2</a>
+            <a href="entidade3.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Entidade 3</h2> <!-- >>> ALTERAR: título da tela -->
+        <h3>Novo Cadastro</h3>
+        <!-- >>> ALTERAR: texto do <label>, for, name e id (name = coluna do banco) -->
+        <form action="">
+            <label for="campo1">Campo 1</label>
+            <input type="text" name="campo1" id="campo1" maxlength="100" required>
+            <label for="campo2">Campo 2 (número)</label>
+            <input type="number" name="campo2" id="campo2" min="0" step="1" required>
+            <button type="submit" disabled>Salvar</button>
+        </form>
+
+        <table>
+            <caption>Lista de entidade 3</caption> <!-- >>> ALTERAR: legenda -->
+            <thead>
+                <tr>
+                    <!-- >>> ALTERAR: cabeçalhos das colunas -->
+                    <th>Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-entidade3"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/entidade3.js"></script>
+</body>
+</html>

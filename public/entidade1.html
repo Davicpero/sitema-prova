@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entidade 1 | Meu Sistema</title> <!-- >>> ALTERAR: título da aba -->
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1> <!-- >>> ALTERAR: nome do sistema -->
+        <!-- >>> ALTERAR: links do menu (nome do arquivo .html e texto) -->
+        <nav>
+            <a href="entidade1.html">Entidade 1</a>
+            <a href="entidade2.html">Entidade 2</a>
+            <a href="entidade3.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Entidade 1</h2> <!-- >>> ALTERAR: título da tela -->
+        <h3>Novo Cadastro</h3>
+        <!-- >>> ALTERAR: em cada campo troque o texto do <label>, o for, o name e o id.
+             O name/id PRECISA ser igual ao nome da coluna no banco. -->
+        <form action="">
+            <label for="campo1">Campo 1</label>
+            <input type="text" name="campo1" id="campo1" maxlength="100" required>
+
+            <label for="campo2">Campo 2</label>
+            <input type="text" name="campo2" id="campo2" required>
+
+            <label for="campo3">Campo 3</label>
+            <input type="text" name="campo3" id="campo3" required>
+
+            <button type="submit" disabled>Salvar</button>
+        </form>
+
+        <table>
+            <caption>Lista de entidade 1</caption> <!-- >>> ALTERAR: legenda -->
+            <thead>
+                <tr>
+                    <!-- >>> ALTERAR: cabeçalhos das colunas (mesma ordem de "colunas" no JS) -->
+                    <th>Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Campo 3</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-entidade1"></tbody> <!-- >>> ALTERAR: id igual a "tabela" no JS -->
+        </table>
+    </main>
+    <script type="module" src="js/entidade1.js"></script>
+</body>
+</html>
